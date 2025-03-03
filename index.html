@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+    <div class="container">
+        <h1>Internet Speed Test</h1>
+        <p class="description">Cek kecepatan internet Anda dengan akurat dan real-time.</p>
+        <div class="speed-test">
+            <div class="card">
+                <i class="fas fa-download"></i>
+                <h2>Download Speed</h2>
+                <p><span id="downloadSpeed">0</span> Mbps</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-upload"></i>
+                <h2>Upload Speed</h2>
+                <p><span id="uploadSpeed">0</span> Mbps</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-signal"></i>
+                <h2>Ping</h2>
+                <p><span id="ping">0</span> ms</p>
+            </div>
+        </div>
+        <button id="startTest">
+            <i class="fas fa-play"></i> Start Test
+        </button>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="footer">
+            <p>Dibuat dengan <i class="fas fa-heart"></i> menggunakan Speedtest.js</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/speedtest-net@2.2.0/dist/speedtest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
